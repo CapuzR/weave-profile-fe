@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "weaveProfileFe": {
+      "main": "src/weaveProfileFe/main.mo",
+      "type": "motoko"
+    },
+    "weaveProfileFe_assets": {
+      "dependencies": [
+        "weaveProfileFe"
+      ],
+      "frontend": {
+        "entrypoint": "src/weaveProfileFe_assets/src/index.html"
+      },
+      "source": [
+        "src/weaveProfileFe_assets/assets",
+        "dist/weaveProfileFe_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.3",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
