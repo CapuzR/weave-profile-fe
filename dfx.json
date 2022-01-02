@@ -1,13 +1,6 @@
 {
   "canisters": {
-    "weaveProfileFe": {
-      "main": "src/weaveProfileFe/main.mo",
-      "type": "motoko"
-    },
     "weaveProfileFe_assets": {
-      "dependencies": [
-        "weaveProfileFe"
-      ],
       "frontend": {
         "entrypoint": "src/weaveProfileFe_assets/src/index.html"
       },
